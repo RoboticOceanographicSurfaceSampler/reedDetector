@@ -5,7 +5,6 @@ class ReedController:
 
     def __init__(self, gpio_port: int):
         GPIO.setmode(GPIO.BCM)
-        self.is_on = False
         self.__em_channel = gpio_port
 
         print("setting up gpio controller on channel " + str(self.__em_channel))
@@ -19,4 +18,3 @@ class ReedController:
 
     def cleanup(self):
         GPIO.cleanup()
-        self.is_on = False
