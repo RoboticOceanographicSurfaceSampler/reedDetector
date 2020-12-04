@@ -12,7 +12,7 @@ class ReedController:
         GPIO.setup(self.__em_channel, GPIO.OUT)
 
     def is_on(self):
-        print(f'checking voltage on channel {self.__em_channel}')
+        #print(f'checking voltage on channel {self.__em_channel}')
         return GPIO.input(self.__em_channel)
 
     def cleanup(self):
