@@ -40,4 +40,5 @@ class ReedController:
         return GPIO.input(self.__em_channel)
 
     def __cleanup(self):
+        print('control c pressed, cleaning up gpio before exit')
         GPIO.cleanup()
