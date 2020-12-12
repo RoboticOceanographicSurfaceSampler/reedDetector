@@ -33,6 +33,7 @@ async def on_switch(is_on):
         await asyncio.sleep(10)
     
     pwm_ctrl.set_duty(0)
+    heater_running = False
     print('ending heater loop')
 
 
