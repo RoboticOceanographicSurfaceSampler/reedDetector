@@ -1,8 +1,13 @@
 from ReedCtr import ReedController
+import asyncio
 import time
 
 controller = ReedController(21)
 
-last_state = False
+
+@controller.event
+async def on_switch(is_on):
+    print()
+
 
 controller.run()
