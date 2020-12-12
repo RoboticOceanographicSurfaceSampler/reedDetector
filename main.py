@@ -5,7 +5,7 @@ import time
 
 reed_ctrl = ReedController(21)
 
-pwm_ctrl = pwmController(12, 1000)
+pwm_ctrl = pwmController(18, 1000)
 
 
 heater_running = False
